@@ -1,21 +1,31 @@
 import Navlist from './Navlist';
+import { SideBardata } from '../../../Data/sidebar.data';
+import { useContext } from 'react';
+import { Sidebar } from '../../../context/SideBarContext';
 
 const SideBar = () => {
+	const { selected, setSelected } = useContext(Sidebar);
+
 	return (
-		<div className="fixed flex flex-col gap-3 px-8 pt-6 h-full shadow-md bg-white z-20">
-			<div className="flex items-center h-9 mb-4 px-2">
-				<img src="./public/svg/logo.svg" alt="logo" className="w-7 mr-3" />
-				<h1 className="font-bold text-xl text-[#343C6A]">BankDash.</h1>
+		<div className="fixed flex flex-col gap-3 h-full shadow-sm bg-white z-20">
+			<div className="flex items-center h-20 px-8 cursor-pointer">
+				<img src="svg/logo.svg" alt="logo" className="w-8 mr-2" />
+				<h1 className="font-bold text-xl text-blue-dark">BankDash.</h1>
 			</div>
-			<Navlist image="./public/svg/dashboard.svg">Dashboard</Navlist>
-			<Navlist image="./public/svg/transaction.svg">Transactions</Navlist>
-			<Navlist image="./public/svg/accounts.svg">Accounts</Navlist>
-			<Navlist image="./public/svg/invesments.svg">Investments</Navlist>
-			<Navlist image="./public/svg/credit_cards.svg">Credit Cards</Navlist>
-			<Navlist image="./public/svg/loans.svg">Loans</Navlist>
-			<Navlist image="./public/svg/services.svg">Services</Navlist>
-			<Navlist image="./public/svg/previleges.svg">My Privileges</Navlist>
-			<Navlist image="./public/svg/settings.svg">Setting</Navlist>
+			{SideBardata.map((item, index) => (
+				<Navlist
+					onClick={() => setSelected(index)}
+					className={`navlist ${
+						selected === index ? 'nav__active' : ''
+					} flex gap-5 justify-start items-center py-2 px-8 rounded-md cursor-pointer hover:bg-slate-200`}
+					key={index}
+					image={item.image}
+					value={item.value}
+					href={item.href}
+					id={index}
+					children={item.svg}
+				/>
+			))}
 		</div>
 	);
 };

@@ -1,16 +1,16 @@
 import Header from '../components/Fragment/Header/Header';
 import SideBar from '../components/Molecules/SideBar';
 
-const OverviewPage = () => {
+const PrivilegesPage = () => {
 	return (
 		<>
-			<Header value="Overview" />
+			<Header value="Privileges" />
 			<SideBar />
 			<section>
-				<h1>Overview Content</h1>
+				<h1>Privileges Content</h1>
 			</section>
 		</>
 	);
 };
 
-export default OverviewPage;
+export default PrivilegesPage;

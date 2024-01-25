@@ -1,16 +1,16 @@
 import Header from '../components/Fragment/Header/Header';
 import SideBar from '../components/Molecules/SideBar';
 
-const OverviewPage = () => {
+const LoansPage = () => {
 	return (
 		<>
-			<Header value="Overview" />
+			<Header value="Loans" />
 			<SideBar />
 			<section>
-				<h1>Overview Content</h1>
+				<h1>Loans Content</h1>
 			</section>
 		</>
 	);
 };
 
-export default OverviewPage;
+export default LoansPage;

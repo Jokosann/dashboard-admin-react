@@ -5,3 +5,18 @@
 * {
 	/* border: 1px solid black; */
 }
+
+section {
+	@apply bg-background-dash w-full min-h-screen pt-24 pl-60;
+}
+
+.navlist.nav__active svg g path {
+	fill: #2d60ff;
+}
+.navlist.nav__active svg path {
+	fill: #2d60ff;
+}
+
+.navlist.nav__active p {
+	color: #2d60ff;
+}
