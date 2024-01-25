@@ -1,8 +1,8 @@
 const Header = (props) => {
 	const { value } = props;
 	return (
-		<header className="w-full h-20 bg-white fixed top-0 left-0 flex justify-center items-center shadow-sm z-10">
-			<nav className="w-full flex items-center mx-auto my-5  px-8">
+		<header className="w-full h-[75px] bg-white fixed top-0 left-0 flex justify-center items-center shadow-sm z-10">
+			<nav className="w-full flex items-center mx-auto px-8">
 				<div className="w-full flex items-center justify-between">
 					<h1 className="text-xl font-semibold pl-52 text-blue-dark">{value}</h1>
 					<div className="flex items-center h-[60px] gap-6">
@@ -17,7 +17,7 @@ const Header = (props) => {
 								type="search"
 								name="search"
 								id="search"
-								className="w-full h-full bg-transparent  placeholder:text-slate-500 placeholder:text-sm indent-6 text-sm focus:outline-none focus:border-none"
+								className="w-full h-full bg-transparent text-slate-900 placeholder:text-slate-500 placeholder:text-sm indent-6 text-sm focus:outline-none focus:border-none"
 							/>
 						</div>
 						<div className="w-10 aspect-[1/1] flex items-center justify-center bg-slate-200 rounded-full cursor-pointer">
