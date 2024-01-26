@@ -1,6 +1,8 @@
+import { iconSvg } from '../utils/image';
+
 export const SideBardata = [
 	{
-		image: 'svg/dashboard.svg',
+		image: iconSvg.dashboard,
 		value: 'Dashboard',
 		href: '/',
 		svg: (
@@ -26,7 +28,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/transaction.svg',
+		image: iconSvg.transaction,
 		value: 'Transaction',
 		href: '/transactions',
 		svg: (
@@ -68,7 +70,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/accounts.svg',
+		image: iconSvg.transaction,
 		value: 'Accounts',
 		href: '/accounts',
 		svg: (
@@ -98,7 +100,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/invesments.svg',
+		image: iconSvg.invesments,
 		value: 'Invesments',
 		href: '/investments',
 		svg: (
@@ -141,7 +143,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/credit_cards.svg',
+		image: iconSvg.credit_card,
 		value: 'Credit Cards',
 		href: '/credit',
 		svg: (
@@ -172,7 +174,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/loans.svg',
+		image: iconSvg.loans,
 		value: 'Loans',
 		href: '/loans',
 		svg: (
@@ -206,7 +208,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/services.svg',
+		image: iconSvg.services,
 		value: 'Services',
 		href: '/services',
 		svg: (
@@ -252,7 +254,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/previleges.svg',
+		image: iconSvg.previleges,
 		value: 'Privileges',
 		href: '/privileges',
 		svg: (
@@ -291,7 +293,7 @@ export const SideBardata = [
 		),
 	},
 	{
-		image: 'svg/settings.svg',
+		image: iconSvg.settings,
 		value: 'settings',
 		href: '/settings',
 		svg: (

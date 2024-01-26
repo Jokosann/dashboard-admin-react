@@ -1,3 +1,5 @@
+import { iconSvg } from '../../../utils/image';
+
 const Header = (props) => {
 	const { value } = props;
 	return (
@@ -8,7 +10,7 @@ const Header = (props) => {
 					<div className="flex items-center h-[60px] gap-6">
 						<div className="relative w-56 h-10 px-4 bg-slate-200 overflow-hidden rounded-full">
 							<img
-								src="svg/search.svg"
+								src={iconSvg.search}
 								alt="search"
 								className="absolute top-1/2 -translate-y-[45%] left-4 w-4"
 							/>
@@ -21,13 +23,13 @@ const Header = (props) => {
 							/>
 						</div>
 						<div className="w-10 aspect-[1/1] flex items-center justify-center bg-slate-200 rounded-full cursor-pointer">
-							<img src="svg/setting.svg" alt="logo" className="w-6" />
+							<img src={iconSvg.setting} alt="logo" className="w-6" />
 						</div>
 						<div className="w-10 aspect-[1/1] flex items-center justify-center bg-slate-200 rounded-full cursor-pointer">
-							<img src="svg/bel.svg" alt="logo" className="w-6" />
+							<img src={iconSvg.bel} alt="logo" className="w-6" />
 						</div>
 						<div className="w-12 aspect-[1/1] flex items-center justify-center bg-slate-200 rounded-full overflow-hidden cursor-pointer">
-							<img src="svg/accounts.svg" alt="logo" className="object-cover" />
+							<img src={iconSvg.account} alt="logo" className="object-cover" />
 						</div>
 					</div>
 				</div>

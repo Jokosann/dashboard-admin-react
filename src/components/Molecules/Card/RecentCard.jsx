@@ -1,24 +1,27 @@
+import { iconSvg } from '../../../utils/image';
 import RecentList from '../../Atom/RecentList';
 
-const RecentCard = () => {
+const RecentCard = ({ classname }) => {
 	return (
-		<div className="flex flex-col justify-between w-full h-52 p-4 rounded-3xl overflow-hidden shadow-md bg-white">
+		<div
+			className={`flex flex-col justify-between max-w-sm h-52 p-4 rounded-3xl overflow-hidden shadow-md bg-white ${classname}`}
+		>
 			<RecentList
-				svg="public/svg/deposit.svg"
+				svg={iconSvg.deposit}
 				deposit="Deposit from my Card"
 				date="25 January 2024"
 				price="-$1,665"
 				textPrice="text-red-500"
 			/>
 			<RecentList
-				svg="public/svg/paypal.svg"
+				svg={iconSvg.paypal}
 				deposit="Deposit Paypal"
 				date="22 January 2024"
 				price="+$2,288"
 				textPrice="text-green-500"
 			/>
 			<RecentList
-				svg="public/svg/jemmy.svg"
+				svg={iconSvg.jemmy}
 				deposit="Jemmy Wilson"
 				date="21 January 2024"
 				price="+$2,929"

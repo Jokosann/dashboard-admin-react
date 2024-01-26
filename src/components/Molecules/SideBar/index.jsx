@@ -2,6 +2,7 @@ import Navlist from './Navlist';
 import { SideBardata } from '../../../Data/sidebar.data';
 import { useContext } from 'react';
 import { Sidebar } from '../../../context/SideBarContext';
+import { iconSvg } from '../../../utils/image';
 
 const SideBar = () => {
 	const { selected, setSelected } = useContext(Sidebar);
@@ -9,7 +10,7 @@ const SideBar = () => {
 	return (
 		<div className="fixed flex flex-col gap-1 h-full shadow-sm bg-white z-20 pr-4">
 			<div className="flex items-center h-[75px] px-8 cursor-pointer">
-				<img src="svg/logo.svg" alt="logo" className="w-8 mr-3" />
+				<img src={iconSvg.logo} alt="logo" className="w-8 mr-3" />
 				<h1 className="font-bold text-xl text-blue-dark">BankDash.</h1>
 			</div>
 			{SideBardata.map((item, index) => (

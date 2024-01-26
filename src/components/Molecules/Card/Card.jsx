@@ -2,7 +2,7 @@ const Card = (props) => {
 	const { chip, background, backgroundDown, logoAtm, text, text2 } = props;
 	return (
 		<div
-			className={`flex flex-col justify-between w-full h-52 ${text}  rounded-3xl overflow-hidden ${background} shadow-md`}
+			className={`flex flex-col justify-between max-w-sm h-52 ${text}  rounded-3xl overflow-hidden ${background} shadow-md`}
 		>
 			<div className="flex justify-between items-start px-6 pt-4">
 				<div>
