@@ -4,7 +4,7 @@ import RecentList from '../../Atom/RecentList';
 const RecentCard = ({ classname }) => {
 	return (
 		<div
-			className={`flex flex-col justify-between max-w-sm h-52 p-4 rounded-3xl overflow-hidden shadow-md bg-white ${classname}`}
+			className={`flex flex-col justify-between  p-4 rounded-3xl overflow-hidden shadow-md bg-white ${classname}`}
 		>
 			<RecentList
 				svg={iconSvg.deposit}

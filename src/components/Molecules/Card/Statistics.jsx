@@ -3,7 +3,7 @@ import { iconSvg } from '../../../utils/image';
 const Statistics = ({ classname }) => {
 	return (
 		<div
-			className={`relative text-white flex flex-col justify-between max-w-sm rounded-3xl p-8 overflow-hidden bg-white shadow-md ${classname}`}
+			className={`relative text-white flex flex-col justify-between rounded-3xl p-8 overflow-hidden bg-white shadow-md ${classname}`}
 		>
 			<img src={iconSvg.statistics} alt="" />
 			<div className="absolute top-14 left-24 font-medium text-center">

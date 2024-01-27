@@ -2,6 +2,7 @@ import SubTitle from '../components/Atom/SubTitle';
 import Header from '../components/Fragment/Header/Header';
 import Activity from '../components/Molecules/Activity/Activity';
 import Card from '../components/Molecules/Card/Card';
+import History from '../components/Molecules/Card/History';
 import RecentCard from '../components/Molecules/Card/RecentCard';
 import Statistics from '../components/Molecules/Card/Statistics';
 import Transfer from '../components/Molecules/Card/Transfer';
@@ -10,10 +11,10 @@ import { iconSvg } from '../utils/image';
 
 const OverviewPage = () => {
 	return (
-		<>
+		<section>
 			<Header value="Overview" />
 			<SideBar />
-			<section>
+			<div id="container">
 				<div className="grid__overview_1 mb-4">
 					<SubTitle value="My Cards" classname="my__card" />
 					<p className="see__all text-sm place-self-end font-semibold text-blue-dark px-1">
@@ -46,10 +47,10 @@ const OverviewPage = () => {
 					<SubTitle value="Quick Transfer" classname="quick__transfer" />
 					<SubTitle value="Balance History" classname="balence__history" />
 					<Transfer classname="transfer__card" />
-					<Transfer classname="transfer__card2" />
+					<History classname="transfer__card2" />
 				</div>
-			</section>
-		</>
+			</div>
+		</section>
 	);
 };
 

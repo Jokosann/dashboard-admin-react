@@ -23,6 +23,9 @@ import paypal from '../assets/svg/overview/paypal.svg';
 import shapecard_gray from '../assets/svg/overview/shapecard-gray.svg';
 import shapecard_white from '../assets/svg/overview/shapecard-white.svg';
 import statistics from '../assets/svg/overview/statistics.svg';
+import history from '../assets/svg/overview/history.svg';
+// svg transaction
+import expense from '../assets/svg/transaction/expense.svg';
 // images
 import profil from '../assets/images/profil.jpg';
 
@@ -46,6 +49,8 @@ export const iconSvg = {
 	shapecard_gray,
 	shapecard_white,
 	statistics,
+	history,
+	expense,
 	bel,
 	search,
 	setting,

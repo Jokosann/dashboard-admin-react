@@ -6,7 +6,7 @@ const Transfer = ({ classname }) => {
 			className={`${classname} flex flex-col gap-8 bg-white shadow-md rounded-3xl px-6 py-10`}
 		>
 			<div className="flex items-center justify-between gap-6">
-				<div className="flex gap-2">
+				<div className="flex gap-6">
 					<ProfileTransfer name="Livia Bator" jabatan="CEO" />
 					<ProfileTransfer name="Livia Bator" jabatan="CEO" />
 					<ProfileTransfer name="Livia Bator" jabatan="CEO" />

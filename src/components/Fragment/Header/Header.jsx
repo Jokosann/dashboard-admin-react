@@ -3,8 +3,8 @@ import { iconSvg } from '../../../utils/image';
 const Header = (props) => {
 	const { value } = props;
 	return (
-		<header className="w-full h-[75px] bg-white fixed top-0 left-0 flex justify-center items-center shadow-sm z-10">
-			<nav className="w-full flex items-center mx-auto px-8">
+		<header className="h-[75px] bg-white flex justify-center items-center shadow-sm z-10 overflow-hidden">
+			<nav className="w-full flex items-center px-8">
 				<div className="w-full flex items-center justify-between">
 					<h1 className="text-xl font-semibold pl-52 text-blue-dark">{value}</h1>
 					<div className="flex items-center h-[60px] gap-6">
