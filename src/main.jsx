@@ -11,7 +11,6 @@ import LoansPage from './pages/loans';
 import ServicesPage from './pages/services';
 import PrivilegesPage from './pages/privileges';
 import SettingsPage from './pages/settings';
-import SideBarContextProvider from './context/SideBarContext';
 
 const router = createBrowserRouter([
 	{
@@ -54,8 +53,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<SideBarContextProvider>
-			<RouterProvider router={router} />
-		</SideBarContextProvider>
+		<RouterProvider router={router} />
 	</React.StrictMode>
 );
